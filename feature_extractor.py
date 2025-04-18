@@ -33,7 +33,7 @@ name_dict = {
 }
 
 embedding = 'BRec2RoBERT'#'RobBERT'#'BRec2RoBERT'#'BRoBERT'#"BRecRoBERT"#"RecRoBERT"#"MedRoBERTa.nl"#'RobBERT'
-print(embedding)
+
 model_path = name_dict[embedding]
 
 modality = 'Radiology'#Pathology'#'Radiology'
