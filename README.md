@@ -36,14 +36,12 @@ The pipeline involves:
 
 If you want to pretrain the model on a custom corpus:
 
-```bash
+1. Pre-train RoBERTa
 bash run.sh
 ⚠️ Make sure to edit run.sh with your data and training parameters.
 
 2. Extract Feature Embeddings
 To extract embeddings from radiology reports using a pretrained RoBERTa model:
-
-
 
 python feature_extractor.py
 Output: .npy files containing sentence/sequence-level embeddings.
