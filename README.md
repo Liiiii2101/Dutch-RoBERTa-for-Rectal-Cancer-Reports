@@ -1,10 +1,85 @@
-# Dutch-RoBERTa-for-Rectal-Cancer-Reports
-The Role of Pretrained Language Models in predicting survival
+<p align="center">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Flag_of_the_Netherlands.svg" alt="Dutch Flag" width="50"/>
+  &nbsp;&nbsp;
+  <img src="https://upload.wikimedia.org/wikipedia/commons/1/10/RoBERTa_logo.svg" alt="RoBERTa Logo" width="70"/>
+  &nbsp;&nbsp;
+  <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Health_Medical_Care_Icon.svg" alt="Medical Icon" width="50"/>
+</p>
 
-Model
-RoBERTa
+<h1 align="center">Dutch-RoBERTa-for-Rectal-Cancer-Reports</h1>
+<h3 align="center"><em>Exploring Pretrained Language Models for Survival Prediction from Radiology Reports</em></h3>
 
-How to use
-To pretrain: check run.sh
-To extract features embeddings from pre-trained RoBERTa, use feature_extractor.py and the features will be saved as .npy files
-To train survival model: python survival/train.py --feature_dir --output_path  
+---
+
+## 🧠 Model Overview
+
+This project explores the use of **Dutch RoBERTa**, a transformer-based pretrained language model, for **survival prediction** in rectal cancer patients based on free-text radiology reports.
+
+The pipeline involves:
+- Pretraining (if needed) on Dutch clinical corpora.
+- Extracting feature embeddings from radiology reports.
+- Training a survival model using the extracted embeddings.
+
+---
+
+## 📂 Repository Structure
+
+. ├── run.sh # Script to pretrain RoBERTa ├── feature_extractor.py # Script to extract embeddings ├── survival/ │ └── train.py # Survival model training script ├── README.md # This file └── ...
+
+
+
+---
+
+## 🚀 How to Use
+
+### 1. Pretrain Dutch RoBERTa (Optional)
+
+If you want to pretrain the model on a custom corpus:
+
+```bash
+bash run.sh
+⚠️ Make sure to edit run.sh with your data and training parameters.
+
+2. Extract Feature Embeddings
+To extract embeddings from radiology reports using a pretrained RoBERTa model:
+
+
+
+python feature_extractor.py
+Output: .npy files containing sentence/sequence-level embeddings.
+
+You can adjust model paths and input sources in the script.
+
+3. Train the Survival Model
+Train a survival model using extracted features:
+
+
+python survival/train.py --feature_dir PATH_TO_FEATURES --output_path PATH_TO_SAVE_MODEL
+--feature_dir: Path to the directory containing .npy features
+
+--output_path: Directory to save the trained model and logs
+
+📦 Requirements
+Install dependencies using:
+
+
+pip install -r requirements.txt
+Dependencies include:
+
+transformers
+
+scikit-learn
+
+lifelines or other survival analysis libraries
+
+numpy, pandas, torch
+
+📊 Results
+The extracted features can be used to train various survival models such as:
+
+Cox Proportional Hazards (using Concordance Index)
+
+DeepSurv or other neural-based models
+
+Results will depend on dataset size, feature quality, and modeling strategy.
+
