@@ -52,8 +52,8 @@ Pre-train RoBERTa
 ### 2. Extract Feature Embeddings
 To extract embeddings from radiology reports using a pretrained RoBERTa model:
 
-```bash
-python feature_extractor.py
+
+`python feature_extractor.py`
 
 Output: .npy files containing sentence/sequence-level embeddings.
 
@@ -62,8 +62,8 @@ You can adjust model paths and input sources in the script.
 ### 3. Train the Survival Model
 Train a survival model using extracted features:
 
-```bash
-python survival/train.py --feature_dir PATH_TO_FEATURES --output_path PATH_TO_SAVE_MODEL
+
+`python survival/train.py --feature_dir PATH_TO_FEATURES --output_path PATH_TO_SAVE_MODEL`
 
 --feature_dir: Path to the directory containing .npy features
 
