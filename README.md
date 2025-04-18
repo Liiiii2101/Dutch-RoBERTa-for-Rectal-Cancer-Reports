@@ -1,13 +1,13 @@
 <p align="center">
   <img src="asset/flag.png" alt="Dutch Flag" width="50"/>
   &nbsp;&nbsp;
-  <img src="asset/roberta.jpeg" alt="RoBERTa Logo" width="70"/>
+  <img src="asset/roberta.jpg" alt="RoBERTa Logo" width="70"/>
   &nbsp;&nbsp;
   <img src="asset/doctor.png" alt="Medical Icon" width="50"/>
 </p>
 
 <h1 align="center">Dutch-RoBERTa-for-Rectal-Cancer-Reports</h1>
-<h3 align="center"><em>Exploring Pretrained Language Models for Survival Prediction from Radiology Reports</em></h3>
+<h3 align="center"><em>Exploring Pretrained Language Models using Survival Prediction from Radiology Reports</em></h3>
 
 ---
 
