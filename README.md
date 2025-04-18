@@ -62,15 +62,7 @@ Install dependencies using:
 
 
 pip install -r requirements.txt
-Dependencies include:
 
-transformers
-
-scikit-learn
-
-lifelines or other survival analysis libraries
-
-numpy, pandas, torch
 
 📊 Results
 The extracted features can be used to train various survival models such as:
