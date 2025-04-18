@@ -77,7 +77,7 @@ The extracted features can be used to train various survival models such as:
 
 Cox Proportional Hazards (using Concordance Index)
 
-Scattertxt analysis
+deep learning based survival model
 
 ...
 
