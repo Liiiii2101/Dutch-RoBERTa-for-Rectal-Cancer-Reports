@@ -42,7 +42,7 @@ pip install -r requirements.txt
 
 If you want to pretrain the model on a custom corpus:
 
-1. Pre-train RoBERTa
+Pre-train RoBERTa
 
 bash run.sh
 
