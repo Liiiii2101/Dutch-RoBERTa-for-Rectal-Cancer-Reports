@@ -32,6 +32,12 @@ The pipeline involves:
 
 ## 🚀 How to Use
 
+### 📦 Requirements
+Install dependencies using:
+
+
+pip install -r requirements.txt
+
 ### 1. Pretrain Dutch RoBERTa (Optional)
 
 If you want to pretrain the model on a custom corpus:
@@ -40,7 +46,7 @@ If you want to pretrain the model on a custom corpus:
 bash run.sh
 ⚠️ Make sure to edit run.sh with your data and training parameters.
 
-2. Extract Feature Embeddings
+### 2. Extract Feature Embeddings
 To extract embeddings from radiology reports using a pretrained RoBERTa model:
 
 python feature_extractor.py
@@ -48,7 +54,7 @@ Output: .npy files containing sentence/sequence-level embeddings.
 
 You can adjust model paths and input sources in the script.
 
-3. Train the Survival Model
+### 3. Train the Survival Model
 Train a survival model using extracted features:
 
 
@@ -57,21 +63,7 @@ python survival/train.py --feature_dir PATH_TO_FEATURES --output_path PATH_TO_SA
 
 --output_path: Directory to save the trained model and logs
 
-📦 Requirements
-Install dependencies using:
 
-
-pip install -r requirements.txt
-
-
-📊 Results
-The extracted features can be used to train various survival models such as:
-
-Cox Proportional Hazards (using Concordance Index)
-
-deep learning based survival model
-
-...
 
 
 
