@@ -29,15 +29,14 @@ The pipeline involves:
 
 
 ---
-```md
 
 ## 🚀 How to Use
 
 ### 📦 Requirements
 Install dependencies using:
 
-```bash
-pip install -r requirements.txt
+
+`pip install -r requirements.txt`
 
 ### 1. Pretrain Dutch RoBERTa (Optional)
 
@@ -45,8 +44,8 @@ If you want to pretrain the model on a custom corpus:
 
 Pre-train RoBERTa
 
-```bash
-bash run.sh
+
+`bash run.sh`
 
 ⚠️ Make sure to edit run.sh with your data and training parameters.
 
