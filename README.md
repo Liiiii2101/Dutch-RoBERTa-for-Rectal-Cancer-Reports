@@ -1,9 +1,9 @@
 <p align="center">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Flag_of_the_Netherlands.svg" alt="Dutch Flag" width="50"/>
+  <img src="asset/flag.png" alt="Dutch Flag" width="50"/>
   &nbsp;&nbsp;
-  <img src="https://upload.wikimedia.org/wikipedia/commons/1/10/RoBERTa_logo.svg" alt="RoBERTa Logo" width="70"/>
+  <img src="asset/roberta.jpeg" alt="RoBERTa Logo" width="70"/>
   &nbsp;&nbsp;
-  <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Health_Medical_Care_Icon.svg" alt="Medical Icon" width="50"/>
+  <img src="asset/doctor.png" alt="Medical Icon" width="50"/>
 </p>
 
 <h1 align="center">Dutch-RoBERTa-for-Rectal-Cancer-Reports</h1>
