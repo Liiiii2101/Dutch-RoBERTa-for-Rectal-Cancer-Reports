@@ -43,13 +43,16 @@ pip install -r requirements.txt
 If you want to pretrain the model on a custom corpus:
 
 1. Pre-train RoBERTa
+
 bash run.sh
+
 ⚠️ Make sure to edit run.sh with your data and training parameters.
 
 ### 2. Extract Feature Embeddings
 To extract embeddings from radiology reports using a pretrained RoBERTa model:
 
 python feature_extractor.py
+
 Output: .npy files containing sentence/sequence-level embeddings.
 
 You can adjust model paths and input sources in the script.
@@ -59,6 +62,7 @@ Train a survival model using extracted features:
 
 
 python survival/train.py --feature_dir PATH_TO_FEATURES --output_path PATH_TO_SAVE_MODEL
+
 --feature_dir: Path to the directory containing .npy features
 
 --output_path: Directory to save the trained model and logs
