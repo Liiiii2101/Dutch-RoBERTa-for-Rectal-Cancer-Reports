@@ -79,7 +79,9 @@ The extracted features can be used to train various survival models such as:
 
 Cox Proportional Hazards (using Concordance Index)
 
-DeepSurv or other neural-based models
+Scattertxt analysis
 
-Results will depend on dataset size, feature quality, and modeling strategy.
+...
+
+
 
